@@ -34,10 +34,10 @@
         $changes = $service->changes;
         $channels = $service->channels;
         $channel = new Google_Service_Drive_Channel();
-        $channel->id = "imkreative-channel-test-0219";
+        $channel->id = "imkreative-channel-test-0218";
         $channel->type = "web_hook";
         $channel->address = "https://dev.kreativeking.com/drive2ftp/notification.php";
-        // $watch = $changes->watch($channel);
+        $watch = $changes->watch($channel);
 
 
         echo '<pre>';
